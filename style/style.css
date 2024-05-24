@@ -1,4 +1,5 @@
-*{
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,19 +7,17 @@
     scroll-behavior: smooth;
 }
 
-
-
-body{
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:  rgb(139, 0, 214);
+    background-color: #d5a9a8;
 }
 
-img{
+img {
     width: 100%;
 }
 
 .navegacion {
-    background-color:   rgb(29, 59, 255);
+    background-color: #2A5657;
     display: flex;
     justify-content: flex-end;
     gap: 3rem;
@@ -28,14 +27,12 @@ img{
     font-weight: bold;
 }
 
-.navegacion > a{
+.navegacion > a {
     color: white;
     text-decoration: none;
 }
 
-
-
-.foto{
+.foto {
     max-width: 400px;
     border-radius: 200px;
     border: 5px black solid;
@@ -46,16 +43,16 @@ img{
     align-items: center;
     margin: 50px;
     gap: 100px;
-    background-color: rgb(139, 0, 214);
+    background-color: #d5a9a8;
     color: white;
 }
 
-.yo{
+.yo {
     display: flex;
     flex-direction: column;
 }
 
-.yo > h1{
+.yo > h1 {
     font-size: 3rem;
 }
 
@@ -63,12 +60,12 @@ img{
     font-size: 2rem;
 }
 
-.proyects{
-    background-color:  rgb(29, 59, 255);
+.proyects {
+    background-color: #2A5657;
     color: white;
 }
 
-.proyects > h2{
+.proyects > h2 {
     font-size: 50px;
     text-align: center;
 }
@@ -77,119 +74,248 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .apps > div > img {
-    cursor: pointer;
-    border-radius: 1rem ;
+    border-radius: 1rem;
     border: 3px solid black;
 }
 
-.apps > div > h3{
-font-size: 30px;
+.apps > div > h3 {
+    font-size: 30px;
 }
 
-.apps > div > p{
+.apps > div > p {
     font-size: 17px;
-    }
+}
 
-.poke {
+.shei {
     max-width: 500px;
     margin: 1rem;
 }
 
-.rick{
+.rick {
     max-width: 500px;
     margin: 1rem;
 }
 
-.clima{
+.clima {
     max-width: 500px;
     margin: 1rem;
 }
 
-.experience{
-    background-color:  rgb(139, 0, 214);
+.experience {
+    background-color: #d5a9a8;
     color: white;
 }
 
-.experience > h1{
-margin: 70px;
-text-align: center;
+.experience > h1 {
+    margin: 70px;
+    text-align: center;
 }
 
-.exper{
+.exper {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     font-size: 1.4rem;
-    height: 300px;
 }
 
-.sub__exper > h4{
+.sub__exper {
+    text-align: center;
+}
+
+.sub__exper > ul {
+    display: flex;
+}
+
+.sub__exper > h4 {
     margin: 20px;
     text-align: center;
     font-size: 2rem;
 }
 
-.sub__exper > ul{
-    
+.academlo {
+    max-width: 400px;
+    border: 5px solid black;
 }
 
-.contact{
+.udemy {
+    max-width: 400px;
+    max-height: 300px;
+    border: 5px solid black;
+}
+
+.mimo {
+    max-width: 250px;
+    max-height: 350px;
+    border: 5px solid black;
+}
+
+.contact {
     border-radius: 2rem;
-    padding: 50px;
-    margin: 50px;
-    background-color:   rgb(29, 59, 255);
+    padding: 20px;
+    margin: 20px;
+    background-color: #2A5657;
     height: 300px;
     color: white;
+    width: 100%;
 }
 
-.contact >h1{
+.contact > h1 {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.contacto{
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.contactos {
     display: flex;
     justify-content: space-around;
-    color: white;
+    width: 100%;
 }
 
-.contacto >img{
-    
+.imageness {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.contactos{
-    
-}
-
-.correo{
-    max-width: 120px;
-    margin-left: 40px;
+.correo {
+    width: 150px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
-.phone{
-    max-width: 60px;
+.phone {
+    height: 90px;
+    width: 70px;
+    cursor: pointer;
     margin-left: 30px;
+}
+
+.linkedin {
+    margin-right: 50px;
+    width: 100px;
     cursor: pointer;
 }
 
-.linkedin{
-    max-width: 100px;
-    cursor: pointer;
-}
-
-.nombre{
+.nombre {
     text-decoration: none;
     color: white;
 }
 
 .casa {
-    max-width: 80px;
-    margin-left: 80px;
+    width: 110px;
     cursor: pointer;
+    margin-right: 40px;
 }
 
 
+@media (max-width: 568px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navegacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .navegacion > a {
+        font-size: 1rem;
+    }
+
+    .foto {
+        max-width: 250px;
+        border-radius: 125px;
+    }
+
+    .about {
+        margin: 10px;
+        gap: 20px;
+    }
+
+    .yo > h1 {
+        font-size: 2rem;
+    }
+
+    .yo > p {
+        font-size: 1.2rem;
+    }
+    
+    .imageness{
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        width: 100px;
+    }
+    .proyects,
+    .experience,
+    .contact {
+        padding: 20px;
+        /* Añadir espacio interno */
+    }
+
+    .exper > div {
+        margin-bottom: 10px;
+        /* Reducir el espacio entre los bloques */
+    }
+
+    .sub__exper p {
+        font-size: 20px;
+        /* Reducir el tamaño del texto */
+    }
+
+    .contact {
+        border-radius: 2rem;
+        background-color: #2A5657;
+        color: white;
+        
+    }
+    
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        
+    }
+    
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        min-width: 100px;
+        font-size: 24px;
+    }
+    
+    .imageness {
+        
+        display: none;
+    }
+    
+    /* Ajustes para las imágenes */
+    .correo,
+    .phone,
+    .linkedin,
+    .casa {
+        
+        height: auto; /* Para que el tamaño se ajuste proporcionalmente */
+        cursor: pointer;
+    }
+    
+}
